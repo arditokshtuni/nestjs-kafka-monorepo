@@ -24,6 +24,8 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This is a simple project that shows how we can connect different applications in one NestJS application. It uses Kafka for the events. The idea of the project is to manage Events and Tickets where users can register, login and buy tickets for different events. On different actions we push to different Kafka topics and there is a Notification service that listend to different topics and an email is sent to the user.
+This project was created to show skills about NestJS, Typescript, Apache Kafka, Event Driven Development and Monorepo (microservices) architecture.
 
 ## Project setup
 
