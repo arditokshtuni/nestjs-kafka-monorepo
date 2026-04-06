@@ -46,6 +46,23 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
+## Compile and run the project locally, all services
+
+The projects work in a way that you can only call the api-gateway service and this service will call other services
+
+```bash
+# start docker services
+$ docker compose up -d
+
+# development
+$ pnpm run start:dev notifications-service
+$ pnpm run start:dev tickets-service
+$ pnpm run start:dev events-service
+$ pnpm run start:dev auth-service
+$ pnpm run start:dev api-gateway
+
+```
+
 ## Run tests
 
 ```bash
